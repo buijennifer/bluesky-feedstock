@@ -12,6 +12,7 @@ build:
     number: 3 
     script: python setup.py install --single-version-externally-managed --record=record.txt
     skip: True  # [py2k]
+    skip: True  # [not Appveyor]
 
 requirements:
     build:
