@@ -104,4 +104,4 @@ jobs:
         upload_package .\ .\recipe .ci_support\%CONFIG%.yaml
       env:
         BINSTAR_TOKEN: $(BINSTAR_TOKEN)
-      condition: and(eq(variables['UPLOAD_PACKAGES'], 'True'), eq(variables['Build.SourceBranch'], 'refs/heads/$(UPLOAD_ON_BRANCH)'))
+      condition: and(eq(variables['UPLOAD_PACKAGES'], 'True'), eq(variables['Build.SourceBranch'], format('refs/heads/{0}', variables['UPLOAD_ON_BRANCH'])))
