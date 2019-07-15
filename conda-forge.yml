@@ -15,10 +15,9 @@ appveyor:
 azure:
   user_or_org: buijennifer 
   project_name: nsls2
-  upload_packages: True
 min_py_ver: "36"
 provider:
   linux: azure
   osx: azure
-  win: azure
+  win: appveyor
 upload_on_branch: master
