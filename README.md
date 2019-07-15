@@ -15,7 +15,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>Appveyor</td>
+    <td>
+      <a href="https://ci.appveyor.com/project/buijennifer/bluesky-feedstock/branch/master">
+        <img alt="windows" src="https://img.shields.io/appveyor/ci/buijennifer/bluesky-feedstock/master.svg?label=Windows">
+      </a>
+    </td>
+  </tr>
     
   <tr>
     <td>Azure</td>
