@@ -19,5 +19,5 @@ min_py_ver: "36"
 provider:
   linux: azure
   osx: azure
-  win: appveyor
+  win: azure
 upload_on_branch: master

@@ -9,10 +9,9 @@ source:
     git_rev: v{{ version }}
 
 build:
-    number: 3 
+    number: 4 
     script: python setup.py install --single-version-externally-managed --record=record.txt
-    skip: True  # [py2k]
-    skip: True  # [not Appveyor]
+    skip: True  # [py2k] 
 
 requirements:
     build:
