@@ -9,14 +9,14 @@ source:
     git_rev: v{{ version }}
 
 build:
-    number: 4 
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+    number: 5 
+    script: "{{ PYTHON }} -m pip install . --no-deps -vv"
     skip: True  # [py2k] 
 
 requirements:
     build:
         - python
-        - setuptools
+        - pip
     run:
         - cycler
         - databroker
